@@ -19,7 +19,7 @@ function initializeGrid(sketchies){
             pixelBox.addEventListener('mouseover', function(e){
                 e.target.style.backgroundColor = 'black';
 
-            pixelBox.addEventListener('touchstart', function(e){
+            pixelBox.addEventListener('touchmove', function(e){
                 e.target.style.backgroundColor = 'black';
                 });    
             });
@@ -37,7 +37,7 @@ function clearGrid(){
         elements[i].addEventListener('mouseover',function(e){ //also reset "pen" to black
             e.target.style.backgroundColor = 'black';
 
-        elements[i].addEventListener('touchstart',function(e){ //also reset "pen" to black
+        elements[i].addEventListener('touchmove',function(e){ //also reset "pen" to black
             e.target.style.backgroundColor = 'black';    
         });
     });
@@ -54,7 +54,7 @@ function rainbowGrid(){
             e.target.style.backgroundColor = "#" + randomColor;
         });
 
-        elements[i].addEventListener('touchstart',function(e){
+        elements[i].addEventListener('touchmove',function(e){
             e.target.style.backgroundColor = "#" + randomColor;
         });
     }
