@@ -18,6 +18,10 @@ function initializeGrid(sketchies){
             pixelBox.classList.add('pixel');
             pixelBox.addEventListener('mouseover', function(e){
                 e.target.style.backgroundColor = 'black';
+
+            pixelBox.addEventListener('touchstart', function(e){
+                e.target.style.backgroundColor = 'black';
+                });    
             });
 
             container.appendChild(pixelBox); //adds div elements to page
@@ -32,9 +36,12 @@ function clearGrid(){
         
         elements[i].addEventListener('mouseover',function(e){ //also reset "pen" to black
             e.target.style.backgroundColor = 'black';
-        });
-    }
 
+        elements[i].addEventListener('touchstart',function(e){ //also reset "pen" to black
+            e.target.style.backgroundColor = 'black';    
+        });
+    });
+    }
 }
 
 function rainbowGrid(){
@@ -46,10 +53,14 @@ function rainbowGrid(){
         elements[i].addEventListener('mouseover',function(e){
             e.target.style.backgroundColor = "#" + randomColor;
         });
+
+        elements[i].addEventListener('touchstart',function(e){
+            e.target.style.backgroundColor = "#" + randomColor;
+        });
     }
 
         
-    
+  
 }
 
 //add click event to clear button
