@@ -11,6 +11,7 @@ h1{
     font-weight: 700px;
 
 }
+
 #container {
    display: flex; 
    flex-wrap: wrap;
@@ -25,6 +26,7 @@ h1{
     gap: 16px;
     padding: 16px;
 }
+
 .pixel {
     background-color: white;    
 }
@@ -37,7 +39,6 @@ button {
     transition-duration: 0.4s;
     
 }
-
  
 .clear:hover {
     background-color: black;
@@ -47,7 +48,5 @@ button {
 .rainbow:hover {
     background-color: blue;
     border-color: fuchsia;
-    color: yellow;
-    
-    
+    color: yellow;    
 }
