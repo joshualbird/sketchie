@@ -1,14 +1,21 @@
 body{
     display: flex;
+    justify-content: center;
+    background-color: darkgray;
+    
 }
 
+h1{
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 700px;
+
+}
 #container {
    display: flex; 
-   max-width: 100vmin;
-   max-height: 96vmin;
    flex-wrap: wrap;
-   
-   
+   max-width: 50vw;
+   border: solid 4px black;
 } 
 
 .options{
@@ -16,10 +23,31 @@ body{
     flex-direction: column;
     justify-content: center;
     gap: 16px;
+    padding: 16px;
 }
 .pixel {
-    background-color: white;
-    border: solid black 1px;
+    background-color: white;    
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 32px;
+    font-size: 14px;
+    border: solid black 2px;
+    transition-duration: 0.4s;
     
 }
 
+ 
+.clear:hover {
+    background-color: black;
+    color: white;
+  }
+
+.rainbow:hover {
+    background-color: blue;
+    border-color: fuchsia;
+    color: yellow;
+    
+    
+}
