@@ -1,0 +1,25 @@
+body{
+    display: flex;
+}
+
+#container {
+   display: flex; 
+   max-width: 100vmin;
+   max-height: 96vmin;
+   flex-wrap: wrap;
+   
+   
+} 
+
+.options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+}
+.pixel {
+    background-color: white;
+    border: solid black 1px;
+    
+}
+
